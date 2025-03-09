@@ -1,0 +1,15 @@
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\bin\Debug\net8.0\SV21T1020718.DataLayers.deps.json
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\bin\Debug\net8.0\SV21T1020718.DataLayers.dll
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\bin\Debug\net8.0\SV21T1020718.DataLayers.pdb
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\obj\Debug\net8.0\SV21T1020718.DataLayers.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\obj\Debug\net8.0\SV21T1020718.DataLayers.AssemblyInfoInputs.cache
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\obj\Debug\net8.0\SV21T1020718.DataLayers.AssemblyInfo.cs
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\obj\Debug\net8.0\SV21T1020718.DataLayers.csproj.CoreCompileInputs.cache
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\obj\Debug\net8.0\SV21T1020718.DataLayers.dll
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\obj\Debug\net8.0\refint\SV21T1020718.DataLayers.dll
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\obj\Debug\net8.0\SV21T1020718.DataLayers.pdb
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\obj\Debug\net8.0\ref\SV21T1020718.DataLayers.dll
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\bin\Debug\net8.0\SV21T1020718.DomainModels.dll
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\bin\Debug\net8.0\SV21T1020718.DomainModels.pdb
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\obj\Debug\net8.0\SV21T1020718.DataLayers.csproj.AssemblyReference.cache
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DataLayers\obj\Debug\net8.0\SV21T102.130EEAD0.Up2Date

@@ -1,0 +1,220 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="cache-control" content="max-age=604800" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Bootstrap e-commerce html template similar to Alibaba">
+	<meta name="keywords" content="Online template, shop, theme, template, html, css, bootstrap 4">
+	<title>THEER Shop</title>
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<!-- jQuery -->
+	<script src="~/js/jquery-2.0.0.min.js" type="text/javascript"></script>
+	<!-- Bootstrap4 files-->
+	<script src="~/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+	<link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<!-- Font awesome 5 -->
+	<link href="~/fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
+	<!-- custom style -->
+	<link href="~/css/ui.css" rel="stylesheet" type="text/css" />
+	<link href="~/css/responsive.css" rel="stylesheet" type="text/css" />
+	<!-- custom javascript -->
+	 <script src="~/js/script.js" type="text/javascript"></script>
+	@* <script src="~/js/script.js" type="text/javascript"></script> *@
+	
+		<style >
+		.list-group-item {
+			white-space: nowrap; /* Ngăn chữ xuống dòng */
+
+		{
+			display: block; /* Đảm bảo mỗi mục chiếm một dòng */
+			padding: 200px 200px; /* Thêm padding cho ô link để dễ nhìn */
+			white-space: nowrap; /* Ngăn chữ xuống dòng */
+			overflow: hidden; /* Ẩn phần chữ thừa nếu quá dài */
+			text-overflow: ellipsis; /* Thêm dấu ba chấm khi chữ quá dài */
+			border: 1px solid #ddd; /* Viền nhẹ cho mỗi ô */
+			margin-bottom: 5px; /* Thêm khoảng cách giữa các ô */
+			border-radius: 5px; /* Viền bo tròn cho các ô */
+		}
+
+		.list-group-item.active {
+			background-color: #007bff; /* Màu nền khi mục được chọn */
+			color: white; /* Màu chữ khi mục được chọn */
+		}
+
+		.list-group-item:hover {
+			background-color: #f8f9fa; /* Màu nền khi hover */
+		}
+		}	
+	</style>
+
+	<style>
+		/* Tạo lưới sản phẩm đẹp, các cột đồng đều */
+		.row-sm {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1.5rem; /* Khoảng cách giữa các sản phẩm */
+		}
+
+		.col-xl-2, .col-lg-3, .col-md-4, .col-6 {
+			flex: 1 1 22%;
+			max-width: 22%;
+			box-sizing: border-box;
+		}
+
+		/* Định dạng cho card sản phẩm */
+		.card-product-grid {
+			border: 1px solid #ddd;
+			border-radius: 12px;
+			overflow: hidden;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			background-color: #fff;
+			box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+		}
+
+			.card-product-grid:hover {
+				transform: translateY(-5px);
+				box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Làm nổi bật khi hover */
+			}
+
+		/* Định dạng cho phần ảnh sản phẩm */
+		.img-wrap {
+			width: 100%;
+			padding-top: 100%; /* Tạo tỷ lệ 1:1 cho ảnh */
+			position: relative;
+			overflow: hidden;
+		}
+
+			.img-wrap img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			
+		/* Định dạng cho phần mô tả và giá sản phẩm */
+		.info-wrap {
+			padding: 15px;
+			text-align: center;
+		}
+
+			.info-wrap .title {
+				font-size: 1.125rem;
+				font-weight: 600;
+				color: #333;
+				text-decoration: none;
+				display: block;
+				margin-bottom: 10px;
+				transition: color 0.3s ease;
+			}
+
+				.info-wrap .title:hover {
+					color: #007bff; /* Màu sắc khi hover */
+				}
+
+			.info-wrap .price {
+				font-size: 1rem;
+				color: #28a745;
+				font-weight: bold;
+			}
+
+		/* Nút thêm vào giỏ hàng */
+		.card-product-grid a.title {
+			display: block;
+			padding: 12px;
+			background-color: #007bff;
+			color: white;
+			text-align: center;
+			border-radius: 5px;
+			text-decoration: none;
+			font-weight: bold;
+			transition: background-color 0.3s ease, transform 0.2s ease;
+		}
+
+			.card-product-grid a.title:hover {
+				background-color: #0056b3;
+				transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+			}
+	</style>
+	<style>
+		/* Định dạng cho thanh phân trang */
+		.pagination {
+			display: flex;
+			justify-content: center;
+			gap: 0.5rem;
+			list-style: none;
+			padding: 1.5rem 0;
+			background-color: #f8f9fa;
+			border-radius: 5px;
+		}
+
+			.pagination li {
+				display: inline;
+			}
+
+			.pagination a {
+				padding: 0.5rem 1rem;
+				border: 1px solid #007bff;
+				border-radius: 50px;
+				color: #007bff;
+				text-decoration: none;
+				font-weight: bold;
+				transition: background-color 0.3s ease, color 0.3s ease;
+			}
+
+				.pagination a:hover {
+					background-color: #007bff;
+					color: white;
+				}
+
+			.pagination .active a {
+				background-color: #007bff;
+				color: white;
+				pointer-events: none;
+			}
+
+			.pagination .disabled a {
+				background-color: #f1f1f1;
+				color: #ccc;
+				pointer-events: none;
+			}
+	</style>
+	<style>
+		.field-validation-error {
+			color: red;
+		}
+	</style>
+
+</head>
+<body>
+	<b class="screen-overlay"></b>
+	<header class="section-header" style="background-color:#fff0e5">
+
+		@{
+			await Html.RenderPartialAsync("_Header");
+		}
+	</header> 
+	@RenderBody()
+	@{
+		await Html.RenderPartialAsync("_Footer");
+	}
+	<script src="~/themes/bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap 3.3.7 -->
+	<script src="~/themes/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- SlimScroll -->
+	<script src="~/themes/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<!-- FastClick -->
+	<script src="~/themes/bower_components/fastclick/lib/fastclick.js"></script>
+	<script src="~/themes/bower_components/moment/min/moment.min.js"></script>
+	<script src="~/themes/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+	<script src="~/themes/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+	<script src="~/themes/bower_components//select2/dist/js/select2.min.js"></script>
+	<script src="~/themes/bower_components/inputmask/dist/jquery.inputmask.bundle.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+	@RenderSection("scripts", false)
+</body>
+	
+</html>

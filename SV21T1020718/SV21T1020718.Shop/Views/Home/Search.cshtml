@@ -1,0 +1,82 @@
+﻿@model SV21T1020718.Shop.Models.ProductSearchResult
+@{
+    Layout = null;
+}
+<div class="container my-5">
+    <!-- Tiêu đề -->
+    <section class="text-center mb-5">
+        <h2 class="text-uppercase text-warning fw-bold" style="color: #FFA500;">
+            Tất cả sản phẩm
+        </h2>
+        <p class="text-muted">
+            Tìm kiếm những sản phẩm tuyệt vời nhất cho bạn!
+        </p>
+        <hr class="mx-auto" style="width: 100px; border: 2px solid #FFA500;">
+    </section>
+
+    <!-- Lưới sản phẩm -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+        @foreach (var item in Model.Data)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <!-- Ảnh sản phẩm -->
+                    <a href="~/Home/ProductDetail?ProductID=@item.ProductID"
+                       class="d-block text-center p-3 bg-light">
+                        <img src="~/images/products/@item.Photo"
+                             alt="@item.ProductName"
+                             class="img-fluid rounded"
+                             style="max-height: 180px; object-fit: contain;">
+                    </a>
+
+                    <!-- Thông tin sản phẩm -->
+                    <div class="card-body text-center">
+                        <h6 class="card-title text-truncate">
+                            <a href="~/Home/ProductDetail?ProductID=@item.ProductID"
+                               class="text-decoration-none text-dark fw-bold">
+                                @item.ProductName
+                            </a>
+                        </h6>
+                        <p class="text-danger fw-bold mb-0">
+                            @item.Price.ToString("N0") VNĐ
+                        </p>
+                    </div>
+
+                    <!-- Nút thêm vào giỏ hàng -->
+                    <div class="card-footer bg-light">
+                        <a href="~/Cart/AddToCart?ProductID=@item.ProductID&@item.Price&quantity=1"
+                           class="btn" style="background-color: #FFA500; color: white; width: 100%;">
+                            Thêm vào giỏ hàng
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Phân trang -->
+    <div class="d-flex justify-content-center mt-5">
+        <nav aria-label="Pagination">
+            <ul class="pagination pagination-md">
+                @for (int p = 1; p <= Model.PageCount; p++)
+                {
+                    if (p == Model.Page)
+                    {
+                        <li class="page-item active">
+                            <span class="page-link" style="background-color: #FFA500; border-color: #FFA500;">@p</span>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            <a href="javascript:;" onclick="doSearch(@p)" class="page-link" style="color: #FFA500;">@p</a>
+                        </li>
+                    }
+                }
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">

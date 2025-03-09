@@ -1,0 +1,11 @@
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DomainModels\bin\Debug\net8.0\SV21T1020718.DomainModels.deps.json
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DomainModels\bin\Debug\net8.0\SV21T1020718.DomainModels.dll
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DomainModels\bin\Debug\net8.0\SV21T1020718.DomainModels.pdb
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DomainModels\obj\Debug\net8.0\SV21T1020718.DomainModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DomainModels\obj\Debug\net8.0\SV21T1020718.DomainModels.AssemblyInfoInputs.cache
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DomainModels\obj\Debug\net8.0\SV21T1020718.DomainModels.AssemblyInfo.cs
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DomainModels\obj\Debug\net8.0\SV21T1020718.DomainModels.csproj.CoreCompileInputs.cache
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DomainModels\obj\Debug\net8.0\SV21T1020718.DomainModels.dll
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DomainModels\obj\Debug\net8.0\refint\SV21T1020718.DomainModels.dll
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DomainModels\obj\Debug\net8.0\SV21T1020718.DomainModels.pdb
+D:\Project_HUSC\LTUD_WEB\SV21T1020718\SV21T1020718.DomainModels\obj\Debug\net8.0\ref\SV21T1020718.DomainModels.dll

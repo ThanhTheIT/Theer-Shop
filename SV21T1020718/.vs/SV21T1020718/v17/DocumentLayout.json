@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Project_HUSC\\LTUD_WEB\\SV21T1020718\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3FC117CB-7F47-41C8-AAEB-472D6BD5D04D}|SV21T1020718.Shop\\SV21T1020718.Shop.csproj|d:\\project_husc\\ltud_web\\sv21t1020718\\sv21t1020718.shop\\sv21t1020718.shop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3FC117CB-7F47-41C8-AAEB-472D6BD5D04D}|SV21T1020718.Shop\\SV21T1020718.Shop.csproj|solutionrelative:sv21t1020718.shop\\sv21t1020718.shop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1220,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SV21T1020718.Shop",
+              "DocumentMoniker": "D:\\Project_HUSC\\LTUD_WEB\\SV21T1020718\\SV21T1020718.Shop\\SV21T1020718.Shop.csproj",
+              "RelativeDocumentMoniker": "SV21T1020718.Shop\\SV21T1020718.Shop.csproj",
+              "ToolTip": "D:\\Project_HUSC\\LTUD_WEB\\SV21T1020718\\SV21T1020718.Shop\\SV21T1020718.Shop.csproj",
+              "RelativeToolTip": "SV21T1020718.Shop\\SV21T1020718.Shop.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-09T07:45:36.521Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 294,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 854,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

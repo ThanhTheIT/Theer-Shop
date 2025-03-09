@@ -1,0 +1,110 @@
+﻿@model List<SV21T1020718.DomainModels.ViewCart>
+@{
+    // Layout = null;
+    decimal Total = 0;
+}
+<div class="container py-5">
+    <section class="section-content">
+        <div class="row">
+            <main class="col-lg-9">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Giỏ hàng của bạn</h5>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Mặt hàng</th>
+                                    <th scope="col" width="120">Số lượng</th>
+                                    <th scope="col" width="120">Giá</th>
+                                    <th scope="col" class="text-end">Hành động</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-body">
+                                @{
+                                    foreach (var item in Model)
+                                    {
+                                        <tr data-price="@item.Price" data-id="@item.CartDetailID">
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <img src="~/images/products/@item.Photo" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;" alt="@item.ProductName">
+                                                    <div>
+                                                        <h6 class="mb-0">@item.ProductName</h6>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="number" class="form-control text-center quantity-input" style="width: 80px;" value="@item.Quantity" min="1">
+                                            </td>
+                                            <td>
+                                                <span class="text-muted item-price">@item.Price.ToString("N0") VNĐ</span>
+                                            </td>
+                                            <td class="text-end">
+                                                <a href="~/Cart/DeleteCart?cartDetailID=@item.CartDetailID" class="btn btn-outline-danger btn-sm">Xóa</a>
+                                            </td>
+                                        </tr>
+                                        Total += item.Price * item.Quantity;
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+            <aside class="col-lg-3">
+                <div class="card shadow-sm border-0 rounded-3">
+                    <div class="card-header bg-light text-center">
+                        <h5 class="mb-0">Thanh toán</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-end fw-bold mb-3">
+                            Tổng tiền:
+                            <span id="total-price" class="text-danger">@Total.ToString("N0") VNĐ</span> 
+                        </p>
+                        <a href="~/Cart/SeachHistory" class="btn btn-primary w-100 mb-3">Thanh toán</a>
+                        <a href="~/Home" class="btn btn-outline-secondary w-100">Quay lại</a>
+                    </div>
+                    <div class="card-footer bg-light text-center">
+                        <small class="text-muted">Cảm ơn bạn đã mua sắm với chúng tôi!</small>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+</div>
+
+ <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const quantityInputs = document.querySelectorAll('.quantity-input');
+        const totalPriceElement = document.getElementById('total-price');
+
+        // Hàm tính toán tổng tiền
+        const calculateTotalPrice = () => {
+            let total = 0;
+            document.querySelectorAll('tbody tr').forEach(row => {
+                const price = parseFloat(row.getAttribute('data-price')); // Giá cố định
+                const qty = parseInt(row.querySelector('.quantity-input').value) || 1; // Số lượng
+                total += price * qty; // Cộng dồn tổng tiền
+            });
+            totalPriceElement.textContent = `${total.toLocaleString()} VNĐ`;
+        };
+
+        // Lắng nghe sự kiện thay đổi số lượng
+        quantityInputs.forEach(input => {
+            input.addEventListener('input', (e) => {
+                const row = e.target.closest('tr');
+                const pricePerItem = parseFloat(row.getAttribute('data-price')); // Giá cố định
+                const quantity = parseInt(e.target.value) || 1;
+
+                // Giá hiển thị cho mặt hàng không thay đổi
+                row.querySelector('.item-price').textContent = `${pricePerItem.toLocaleString()} VNĐ`;
+
+                // Cập nhật tổng tiền
+                calculateTotalPrice();
+            });
+        });
+    });
+</script>
+
